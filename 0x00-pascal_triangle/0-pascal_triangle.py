@@ -7,7 +7,7 @@ the Pascal triangle
 
 def pascal_triangle(n):
     """
-    Returns a list of list that represents 
+    Returns a list of list that represents
     the Pascal's triangle
 
     Args:
@@ -17,7 +17,7 @@ def pascal_triangle(n):
 
     if n <= 0:
         return pascal_list
-    
+
     for idx in range(n):
         new_list = []
 
@@ -32,5 +32,5 @@ def pascal_triangle(n):
                 new_list.append(next)
 
         pascal_list.append(new_list)
-    
+
     return pascal_list

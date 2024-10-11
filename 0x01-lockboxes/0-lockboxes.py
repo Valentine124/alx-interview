@@ -19,11 +19,10 @@ def canUnlockAll(boxes):
         for key in box:
             idx = boxes.index(box)
 
-        if not (key == idx):
-            keys.add(key)
+            if not (key == idx):
+                keys.add(key)
 
-    for num in range(0, len(boxes)):
-        if not (num in keys):
-            return False
-
-    return True
+        for num in range(0, len(boxes)):
+            if not (num in keys):
+                return False
+return True

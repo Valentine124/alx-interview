@@ -21,21 +21,21 @@ def island_perimeter(grid):
                 else:
                     perimeter += 1
 
-            if j != row_len - 1:
-                if grid[i][j + 1] != 1:
+                if j != row_len - 1:
+                    if grid[i][j + 1] != 1:
+                        perimeter += 1
+                else:
                     perimeter += 1
-            else:
-                perimeter += 1
 
-            if i != grid_len - 1:
-                if grid[i + 1][j] != 1:
+                if i != grid_len - 1:
+                    if grid[i + 1][j] != 1:
+                        perimeter += 1
+                else:
                     perimeter += 1
-            else:
-                perimeter += 1
 
-            if j != 0:
-                if grid[i][j - 1] != 1:
+                if j != 0:
+                    if grid[i][j - 1] != 1:
+                        perimeter += 1
+                else:
                     perimeter += 1
-            else:
-                perimeter += 1
     return perimeter
